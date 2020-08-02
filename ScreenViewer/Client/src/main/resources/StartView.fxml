@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<FlowPane xmlns="http://javafx.com/javafx/8.0.171"
+          xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="spbstu.screenviewer.client.MainController"
+          prefHeight="400.0" prefWidth="600.0"
+          orientation="VERTICAL"
+          hgap="60.0" vgap="60.0"
+          alignment="CENTER">
+    <Label text="Добро пожаловать в Screen Viewer!">
+        <font>
+            <Font name="Arial" size="30"/>
+        </font>
+    </Label>
+    <FlowPane hgap="10.0" vgap="10.0" alignment="CENTER">
+        <Label text="Введите IP-адрес для подключения:">
+            <font>
+                <Font name="Arial" size="20"/>
+            </font>
+        </Label>
+        <TextField fx:id="needIP" onKeyReleased="#readIP"/>
+        <Label fx:id="warning" text="Вы ввели неправильный адрес."
+                style="-fx-text-fill: red" visible="false">
+            <font>
+                <Font name="Arial" size="15"/>
+            </font>
+        </Label>
+    </FlowPane>
+</FlowPane>

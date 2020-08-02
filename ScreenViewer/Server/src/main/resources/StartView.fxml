@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<FlowPane xmlns="http://javafx.com/javafx"
+          prefHeight="400.0" prefWidth="600.0"
+          orientation="VERTICAL"
+          hgap="60.0" vgap="60.0"
+          alignment="CENTER">
+    <Label text="Добро пожаловать в Screen Viewer!">
+        <font>
+            <Font name="Arial" size="30"/>
+        </font>
+    </Label>
+    <Label text="Теперь ваш компьютер доступен для подключения.">
+        <font>
+            <Font name="Arial" size="20"/>
+        </font>
+    </Label>
+</FlowPane>
